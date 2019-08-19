@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XS脚本介绍</title>
+	<link rel="shortcut icon" href="img/ico.ico" />
+	<link rel="bookmark" href="img/ico.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        html,body {
+			height: 100%;/*页脚添加的*/
+			margin: 0;/*页脚添加的*/
+			padding: 0;/*页脚添加的*/
+        }
+        /* 简介 */
+
+        .summary {
+            padding-right: 15px;
+            padding-left: 15px;
+			box-sizing: border-box;/*页脚添加的*/
+			min-height: 100%;/*页脚添加的*/
+			padding-bottom: 70px;/*页脚添加的*/
+        }
+
+        .summary .col-md-3 {
+            margin-bottom: -10px;
+            text-align: center;
+        }
+
+        /* 特性 */
+
+        .feature-divider {
+            margin: 20px 0;
+        }
+
+        .feature {
+            padding: 20px 0;
+	/* 		height:516px; */
+        }
+
+        .feature-heading {
+            font-size: 50px;
+            color: #2a6496;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+
+        /* 响应式布局 */
+
+        @media (max-width: 768) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 20px;
+            }
+        }
+		.tile {
+		/*background-color: #eff0f2;*/
+		border-radius: 6px;
+		padding: 14px;
+		position: relative;
+		text-align: center;
+		}
+		.tile-image.big-illustration {
+		height: 112px;
+		margin-top: 5px;
+		width: 112px;
+		}
+		footer{
+		height: 70px;
+		margin-top: -70px;
+		opacity: 0.5;
+		/*color: red;*/
+		}
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="container summary">
+		<div class="row" id="summary-container">
+		<div class="col-md-3">
+          <div class="tile">
+            <img src="img/compas.svg" alt="Compas" class="tile-image big-illustration">
+            <h2 class="tile-title">Pet v6.71</h2>
+            <!-- <p>100% convertable to HTML/CSS layout.</p> -->
+            <a class="btn btn-primary btn-large btn-block" href="http://ftp6125159.host597.900303.top/6.71.exe">点我下载</a>
+          </div>
+        </div>
+		<div class="col-md-3">
+          <div class="tile">
+            <img src="img/clipboard.svg" alt="Compas" class="tile-image big-illustration">
+            <h2 class="tile-title">Dgn v3.21</h2>
+            <!-- <p>100% convertable to HTML/CSS layout.</p> -->
+            <a class="btn btn-primary btn-large btn-block" href="http://ftp6125159.host597.900303.top/3.21.exe">点我下载</a>
+          </div>
+        </div>
+		<div class="col-md-3">
+          <div class="tile">
+            <img src="img/html-icon.png" alt="Compas" class="tile-image big-illustration">
+            <h2 class="tile-title">西游小精灵 v1</h2>
+            <!-- <p>100% convertable to HTML/CSS layout.</p> -->
+            <a class="btn btn-primary btn-large btn-block" href="http://ftp6125159.host597.900303.top/西游小精灵V1.zip">点我下载</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="img/chat.svg" class="tile-image big-illustration">
+            <h2 class="tile-title">出本小助手 v2</h2>
+            <!-- <p>100% convertable to HTML/CSS layout.</p> -->
+            <a class="btn btn-primary btn-large btn-block" href="http://ftp6125159.host597.900303.top/XS出本小助手v2(密码2018).zip">点我下载</a>
+          </div>
+        </div>
+       
+    </div>
+
+		
+    <!-- 特性 -->
+
+		
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-Pet" role="tab" data-toggle="tab">Pet（宝宝神器）</a></li>
+        <li><a href="#tab-Dgn" role="tab" data-toggle="tab">Dgn（多功能脚本）</a></li>
+        <li><a href="#tab-Xjl" role="tab" data-toggle="tab">西游小精灵(免费)</a></li>
+        <li><a href="#tab-WxMsg" role="tab" data-toggle="tab">点我联系Xs</a></li>
+        <li><a href="#tab-ie" role="tab" data-toggle="tab">占用位</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-Pet">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading"> Pet（宝宝神器） </br>
+					<span class="text-muted">北俱芦洲、灵山新版本均支持</span>
+					</h2>
+                    <p class="lead">一键循环召唤宠物并放技能，各种一键操作，方便使用。
+</br>新增快捷键传送，快捷键设置焦点目标。</br></br>30元/月，绑定游戏账号（改名无影响），不可更换账号。</br>支持微信或支付宝。</br></br>购买联系YY号：155397174</br>购买联系YY号：155397174</br>购买联系YY号：155397174</p>
+<div class="col-md-5">
+        </div>
+                </div>
+			
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/BBSQ.png"
+                         alt="图片加载失败，请刷新重新加载">
+                </div>
+            </div>
+        </div>
+		
+        <div class="tab-pane" id="tab-Dgn">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/DGN1.png"
+                         alt="图片加载失败，请刷新重新加载">
+					<img class="feature-image img-responsive" src="img/DGN2.png"
+                         alt="图片加载失败，请刷新重新加载">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Dgn（多功能脚本）</br><span class="text-muted">北俱芦洲、灵山新版本均支持</span>
+                    </h2>
+                    <p class="lead">智能释放技能,后台按键,过滤定点打怪,抢内政,拉镖,挂花果山副本,挂战场。
+</br></br>
+已调整至 20元/月，绑定游戏账号（改名无影响），不可更换账号。</br>支持微信或支付宝。
+</br></br>购买联系YY号：155397174</br>购买联系YY号：155397174</br>购买联系YY号：155397174</p>
+                </div>
+            </div>
+        </div>
+		
+        <div class="tab-pane" id="tab-Xjl">
+            <div class="row feature">
+                <div class="col-md-5">
+
+                    <h2 class="feature-heading">西游小精灵</br><span class="text-muted">北俱芦洲、灵山新版本均支持</span></h2>
+
+                    <p class="lead">目前只有升级熔炉等级，自动合卡牌。</br>最多支持8开。</br>更多功能收集中，有建议的可以YY给我反馈。</p>
+                </div>
+                <div class="col-md-7">
+                    <img class="feature-image img-responsive" src="img/xjl.png"
+                         alt="图片加载失败，请刷新重新加载">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-WxMsg">
+            <div class="row feature">
+                <!-- <div class="col-md-5"> -->
+				<!-- <label >如果我YY不在线或没回，可点击下面发送按钮呼叫（12点-23点）</label> -->
+                    <!-- <!-- <img class="feature-image img-responsive" src="images/opera-logo.jpg" -->
+                         <!-- <!-- alt="Opera"> -->
+				<!-- </div> -->
+                <div class="col-md-7">
+				<p style="color:red;font-size:18px; ">如果我YY不在线或没回，可点击下面发送按钮呼叫（12点-23点）</p>
+				<form id="formwx" action="" method="post">
+				<textarea cols="70" rows="6" id="contactus" name="WxMsg">续费啦！快上YY！</textarea>
+				</br>
+				<input id="but" class="btn btn-primary" type="button" value="发送消息" onclick="sendwxmsg()"/>
+				</form>
+				
+                    
+                </div>
+            </div>
+        </div>
+        <!-- <div class="tab-pane" id="tab-ie">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">IE <span class="text-muted">你懂的</span></h2>
+
+                    <p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet
+                        Explorer(7，8，9，10版本)，
+                        简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/ie-logo.jpg"
+                         alt="IE">
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+</div>
+
+    <footer >  
+  <div class="col-lg-12">
+	</br>
+    <p style="font-size:25px" class="text-center">Copyright © <span>2019</span> Designed <a href="#" target="_parent">by Xs YY号：155397174</a></p>
+  </div>
+    </footer>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    function sendwxmsg() {
+	$("#but").attr("disabled",true);
+      $.ajax({
+        type: "POST",
+		url: "wxsendmsg.php" ,
+        dataType: "text",
+        data: $('#formwx').serialize(),
+		async: false,
+        success: function (result) {
+			alert(result);
+        },
+        error : function() {
+			alert("异常！");
+        }
+      });
+	 setTimeout(function(){
+		$("#but").removeAttr("disabled");
+	},5000);
+    }
+  </script>
+
+</body>
+</html>
