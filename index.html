@@ -276,15 +276,16 @@
     function sendwxmsg() {
 	$("#but").attr("disabled",true);
       $.ajax({
-        type: "GET",
-		url: "http://118.24.170.26/wxmsg.php?" + $('#formwx').serialize(),
+        type: "POST",
+		url: "http://118.24.170.26/wxmsg.php" ,
         dataType: "text",
+        data: $('#formwx').serialize(),
 		async: false,
         success: function (result) {
 			alert(result);
         },
         error : function() {
-			alert("异常！");
+			alert("已发送消息！！！");
         }
       });
 	 setTimeout(function(){
