@@ -276,7 +276,7 @@
     function sendwxmsg() {
 	$("#but").attr("disabled",true);
       $.ajax({
-        type: "POST",
+        type: "GET",
 		url: "http://118.24.170.26/wxmsg.php?" + $('#formwx').serialize(),
         dataType: "text",
 		async: false,
