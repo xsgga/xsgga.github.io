@@ -10256,7 +10256,7 @@ sm.cn##.ad-dot-container
 pc0359.cn,pc6.com##.ad-download
 bilibili.com##.ad-e1
 bilibili.com##.ad-f
-!mgtv.com##.ad-fixed-bar
+mgtv.com##.ad-fixed-bar
 qq.com##.ad-foot
 eastday.com##.ad-foot-right
 pixiv.net##.ad-footer + .hover-item
@@ -10802,7 +10802,7 @@ byxx.com##.byzwPC-banner-ADscroll
 kuaihou.com##.bz
 52pk.com,fixdown.com##.bzClick
 downyi.com##.bzYouDao
-mgtv.com##.c-95060-top
+!mgtv.com##.c-95060-top
 baidu.com##.c-container.ec-container
 3987.com##.c-gg
 baidu.com##.c-result[data-tpl="adv_wenku_fc"]
